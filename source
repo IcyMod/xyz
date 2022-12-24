@@ -1,0 +1,237 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Avexy Hub", HidePremium = false, IntroText = "Avexy Hub", SaveConfig = true, ConfigFolder = "HackerConfig"})
+
+-- Tabs
+
+local Main = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4034483344",
+	PremiumOnly = false
+})
+
+
+local LocalPlayer = Window:MakeTab({
+	Name = "Local Player",
+	Icon = "rbxassetid://9525535512",
+	PremiumOnly = false
+})
+
+local KickOff = Window:MakeTab({
+	Name = "Kick Off",
+	Icon = "rbxassetid://4642432897",
+	PremiumOnly = false 
+})
+
+local Aimbot = Window:MakeTab({
+	Name = "Aimbot",
+	Icon = "rbxassetid://2795572800",
+	PremiumOnly = false
+})
+
+local ESP = Window:MakeTab({
+	Name = "ESP",
+	Icon = "rbxassetid://2795572800",
+	PremiumOnly = false
+})
+
+local DarkHub = Window:MakeTab({
+	Name = "Dark Hub",
+	Icon = "rbxassetid://10966923565",
+	PremiumOnly = false
+})
+
+local KyrisHub = Window:MakeTab({
+	Name = "Kyris Hub",
+	Icon = "rbxassetid://10966923565",
+	PremiumOnly = false
+})
+
+local BuildABoat = Window:MakeTab({
+	Name = "Build A Boat For Treasure",
+	Icon = "rbxassetid://11606161514",
+	PremiumOnly = false
+})
+
+
+local PrisonLife = Window:MakeTab({
+	Name = "Prison Life",
+	Icon = "rbxassetid://11322093465",
+	PremiumOnly = false 
+})
+
+
+-- Sections
+
+local Section = Main:AddSection({
+	Name = "Infinite Yield"
+})
+
+local Section = LocalPlayer:AddSection({
+	Name = "Local Player"
+})    
+
+local Section = KickOff:AddSection({
+	Name = "Kick Off"
+}) 
+
+local Section = Aimbot:AddSection({
+    Name = "Aimbot + Silent Aim"
+})  
+
+local Section = ESP:AddSection({
+    Name = "Player ESP"
+}) 
+
+local Section = DarkHub:AddSection({
+    Name = "Functions"  
+}) 
+
+local Section = KyrisHub:AddSection({
+    Name = "Functions"  
+}) 
+
+local Section = BuildABoat:AddSection({
+    Name = "Functions"  
+})
+local Section = PrisonLife:AddSection({
+    Name = "Admin Commands"  
+})
+
+-- Buttons/Toggles
+
+Main:AddButton({
+	Name = "Inf Yield",
+	Callback = function()
+        print("button pressed")
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+  	end    
+})
+
+LocalPlayer:AddSlider({
+	Name = "Player Walkspeed",
+	Min = 16,
+	Max = 250,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+KickOff:AddButton({
+	Name = "KICK OFF UI 2",
+	Callback = function()
+        print("button pressed")
+-- Kick Off 2
+-- User: KickOff2User
+-- Password: Sj980hJoPh8
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dekkosploits/Kick-Off/main/Kick%20Off%20Gui%202'), true))()
+   end
+})
+
+KickOff:AddButton({
+	Name = "KICK OFF UI 1",
+	Callback = function()
+        print("button pressed")
+-- Kick Off Gui
+-- User: KickOffUser
+-- Password: Sj980hJoPh8 
+loadstring(game:HttpGet('https://pastebin.com/raw/wEGEQ2A6'))()
+  end   
+
+})
+
+
+Aimbot:AddButton({
+	Name = "Weaponry Hack",
+	Callback = function()
+      	print("button pressed")
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
+  	end    
+})
+
+Aimbot:AddButton({
+	Name = "Arsenal Hack",
+	Callback = function()
+      	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KeoneGithub/KeoneGithub/main/Arsenal",true))()
+  	end    
+})
+
+Aimbot:AddButton({
+	Name = "Big PaintBall",
+	Callback = function()
+      	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/radjahfromdiscord/iNEXT/main/source"))()
+  	end    
+})
+
+Aimbot:AddButton({
+	Name = "No-Scope Arcade",
+	Callback = function()
+      	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
+  	end    
+})
+
+ESP:AddButton({
+	Name = "Skill ESP",
+	Callback = function()
+      	print("button pressed")
+  	end    
+})
+
+ESP:AddButton({
+	Name = "OWL Hub ESP + Aimbot",
+	Callback = function()
+      	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+
+ESP:AddButton({
+	Name = "Unamed ESP",
+	Callback = function()
+      	print("button pressed")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+  	end    
+})
+
+DarkHub:AddButton({
+	Name = "Dark Hub V4",
+	Callback = function()
+    	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+  	end    
+})
+
+KyrisHub:AddButton({
+	Name = "Game Support + Aimbots and more",
+	Callback = function()
+    	print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kaxae/kyris/main/kyris.lua"))()
+  	end      
+})
+
+BuildABoat:AddButton({
+	Name = "Build A Boat For Treasure",
+	Callback = function()
+    	print("button pressed")
+        loadstring(game:HttpGet('https://pastebin.com/raw/cVFSCGRb',true))()
+  	end      
+})
+
+PrisonLife:AddButton({
+	Name = "Prison Life",
+	Callback = function()
+    	print("button pressed")
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+  	end      
+})
+
+KickOff:AddParagraph("UI 2 USERNAME: KickOff2User","UI 2 PASSWORD: Sj980hJoPh8") 
+KickOff:AddParagraph("UI 1 USERNAME: KickOffUser","UI 1 PASSWORD: Sj980hJoPh8")   
+
+OrionLib:Init()
